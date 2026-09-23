@@ -661,80 +661,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.hero-tech-badges-wrap {
-  display: contents;
-}
-
 /* Mobile responsive padding and styles */
 @media (max-width: 991.98px) {
   .hero-section {
-    padding-top: 110px;
-    padding-bottom: 50px;
+    padding-top: 120px;
+    padding-bottom: 60px;
     text-align: center;
   }
   .hero-tag {
     margin-bottom: 1.5rem;
   }
   .hero-image-wrapper {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 280px;
   }
   .card-glass {
     padding: 1.5rem;
   }
   .hero-profile-img {
-    width: 240px;
-    height: 300px;
+    width: 260px;
+    height: 320px;
   }
-  
-  /* Flex wrap layout for tech badges on mobile */
-  .hero-tech-badges-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    max-width: 380px;
-    margin: 1.5rem auto 0 auto;
-    padding: 0 10px;
-    position: relative;
-    z-index: 20;
-  }
-
-  .hero-tech-badges-wrap .hero-badge {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    font-size: 0.78rem;
-    padding: 6px 14px;
-    background: rgba(15, 5, 36, 0.85);
-    border: 1px solid rgba(168, 85, 247, 0.35);
-    border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    animation: float-badge-mobile 4s ease-in-out infinite alternate;
-  }
-
-  @keyframes float-badge-mobile {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-4px); }
-  }
-
-  .hero-exp-badge {
-    right: -10px;
-    bottom: -10px;
-    padding: 8px 14px;
-  }
-
-  .hero-exp-number {
-    font-size: 1.3rem;
-  }
-
-  .hero-exp-label {
-    font-size: 0.65rem;
-  }
+  /* Reposition badges on mobile */
+  .badge-php        { top: 2%;   left: -3%; }
+  .badge-laravel    { top: 18%;  right: -3%; }
+  .badge-flutter    { top: 42%;  right: -3%; }
+  .badge-python     { top: 64%;  left: -3%; }
+  .badge-mysql      { bottom: 2%; left: 2%; }
+  .badge-nextjs     { top: 8%;   right: -3%; }
+  .badge-nodejs     { top: -4%;  left: 20%; }
+  .badge-typescript { top: 52%;  left: -3%; }
+  .badge-rust       { top: 30%;  left: -3%; }
+  .badge-golang     { bottom: 10%; left: -3%; }
+  .badge-julia      { bottom: 28%; right: -3%; }
+  .hero-exp-badge { right: -5%; bottom: 3%; }
 }
