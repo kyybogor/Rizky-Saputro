@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Fullstack Developer profesional dengan keahlian Python, Java, JavaScript, PHP, Ruby, Rust, Dart, Golang, Pandas, Laravel, Flutter, dan MySQL.">
+  <title>Rizky Saputro | Fullstack Developer Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Devicon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="bg-glow-top"></div>
+  <div class="bg-glow-middle"></div>
+
+  <!-- Header Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" id="navBrand">
+        <span class="fs-4 fw-800 text-gradient-purple"><i class="fa-solid fa-code me-1"></i>Rizky Saputro</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" id="navLinkHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="navLinkAbout">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" id="navLinkSkills">Skillset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" id="navLinkProjects">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="navLinkContact">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 g-5">
+        <div class="col-lg-7 text-start">
+          <div class="hero-tag mb-3">
+            <span>Tersedia untuk Project</span>
+          </div>
+          <h1 class="display-4 fw-850 mb-3 text-gradient">
+            Halo, Saya <span class="text-gradient-purple">Rizky Saputro</span> <br>
+            <span id="typewriter" class="text-gradient-purple"></span><span class="cursor-typewriter text-accent-light">|</span>
+          </h1>
+          <p class="lead text-secondary mb-4 col-xl-10">
+            Saya mendedikasikan diri untuk membangun aplikasi web dan mobile yang berskala besar, efisien, serta ramah pengguna. Menguasai pemrograman backend dan frontend dengan integrasi database yang kuat.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-purple" id="btnHeroContact">
+              Hubungi Saya <i class="fa-solid fa-paper-plane ms-2"></i>
+            </a>
+            <a href="#projects" class="btn btn-outline-purple" id="btnHeroProjects">
+              Lihat Project <i class="fa-solid fa-arrow-down ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div class="hero-image-wrapper">
+            <!-- Rotating dashed ring -->
+            <div class="hero-circle-bg"></div>
+            <!-- Outer glow pulse ring -->
+            <div class="hero-glow-ring"></div>
+
+            <!-- Floating Tech Badges -->
+            <div class="hero-badge badge-php">
+              <i class="devicon-php-plain"></i> PHP
+            </div>
+            <div class="hero-badge badge-laravel">
+              <i class="devicon-laravel-plain"></i> Laravel
+            </div>
+            <div class="hero-badge badge-flutter">
+              <i class="devicon-flutter-plain"></i> Flutter
+            </div>
+            <div class="hero-badge badge-python">
+              <i class="devicon-python-plain"></i> Python
+            </div>
+            <div class="hero-badge badge-mysql">
+              <i class="devicon-mysql-plain"></i> MySQL
+            </div>
+            <div class="hero-badge badge-nextjs">
+              <i class="devicon-nextjs-plain"></i> Next.js
+            </div>
+            <div class="hero-badge badge-nodejs">
+              <i class="devicon-nodejs-plain"></i> Node.js
+            </div>
+            <div class="hero-badge badge-typescript">
+              <i class="devicon-typescript-plain"></i> TypeScript
+            </div>
+            <div class="hero-badge badge-rust">
+              <i class="devicon-rust-plain"></i> Rust
+            </div>
+            <div class="hero-badge badge-golang">
+              <i class="devicon-go-original-wordmark"></i> Golang
+            </div>
+            <div class="hero-badge badge-julia">
+              <i class="fa-solid fa-circle-dot"></i> Julia
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="hero-profile-img">
+              <img src="assets/image/rizky.png" alt="Rizky Saputro - Fullstack Developer" id="heroProfilePhoto">
+            </div>
+
+            <!-- Experience badge floating bottom-left -->
+            <div class="hero-exp-badge">
+              <div class="hero-exp-number">2+</div>
+              <div class="hero-exp-label">Tahun<br>Pengalaman</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="card-glass">
+            <span class="section-subtitle">TENTANG SAYA</span>
+            <h2 class="mb-4 text-gradient">Membangun Solusi Digital Dari Ujung Ke Ujung</h2>
+            <p class="text-secondary mb-3">
+              Saya adalah seorang <strong>Fullstack Developer</strong> dengan pengalaman 2 tahun bekerja di perusahaan software house. Saya memiliki spesialisasi dalam membangun, memelihara (maintenance), serta melakukan pengembangan berkelanjutan pada website dan aplikasi mobile (Android/iOS).
+            </p>
+            <p class="text-secondary mb-4">
+              Tanggung jawab saya mencakup pembuatan modul-modul baru, perawatan kode program agar tetap bersih dan optimal, serta memastikan performansi aplikasi berjalan mulus. Saya menguasai secara mendalam bahasa pemrograman Python, Java, JavaScript, PHP, Ruby, Rust, Dart, dan Golang untuk merancang solusi digital dari ujung ke ujung.
+            </p>
+            <div class="row g-3 pt-2">
+              <div class="col-6 col-sm-4">
+                <div class="border border-secondary border-opacity-10 rounded p-3 text-center">
+                  <h3 class="fw-800 text-gradient-purple mb-0">8+</h3>
+                  <small class="text-muted text-uppercase fw-600" style="font-size: 0.7rem;">Bahasa Pemrograman</small>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="border border-secondary border-opacity-10 rounded p-3 text-center">
+                  <h3 class="fw-800 text-gradient-purple mb-0">3+</h3>
+                  <small class="text-muted text-uppercase fw-600" style="font-size: 0.7rem;">Framework Utama</small>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="border border-secondary border-opacity-10 rounded p-3 text-center">
+                  <h3 class="fw-800 text-gradient-purple mb-0">2+</h3>
+                  <small class="text-muted text-uppercase fw-600" style="font-size: 0.7rem;">Tahun Pengalaman</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-start">
+          <div class="ps-lg-4">
+            <h3 class="mb-4 text-gradient">Alur Kerja & Filosofi Saya</h3>
+            <div class="d-flex gap-3 mb-4">
+              <div class="fs-3 text-accent-light"><i class="fa-solid fa-circle-nodes"></i></div>
+              <div>
+                <h5 class="mb-1">Arsitektur API Terstruktur</h5>
+                <p class="text-secondary mb-0">Merancang API RESTful dan gRPC dengan keamanan tinggi, struktur data JSON yang bersih, serta terdokumentasi dengan baik.</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3 mb-4">
+              <div class="fs-3 text-accent-light"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h5 class="mb-1">Optimasi Database</h5>
+                <p class="text-secondary mb-0">Mengelola database relational MySQL secara profesional, termasuk normalisasi data, query kompleks, serta performansi tinggi.</p>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <div class="fs-3 text-accent-light"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div>
+                <h5 class="mb-1">Responsif & Multi-platform</h5>
+                <p class="text-secondary mb-0">Menjamin website berjalan mulus di semua ukuran layar dan sistem operasi dengan transisi yang interaktif.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper">
+          <span class="section-subtitle">Keahlian Teknis</span>
+          <h2 class="display-5 text-gradient">Tech Stack Yang Saya Kuasai</h2>
+          <p class="text-secondary">Berikut adalah teknologi, bahasa pemrograman, dan framework yang saya gunakan secara aktif untuk membangun project.</p>
+        </div>
+      </div>
+
+      <!-- Skill Grid Grouped by Category -->
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Category: Languages -->
+        <div class="col-12 mt-5 mb-2">
+          <h4 class="text-gradient-purple border-bottom border-secondary border-opacity-10 pb-2"><i class="fa-solid fa-terminal me-2"></i>Bahasa Pemrograman</h4>
+        </div>
+        
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <div class="skill-name">Python</div>
+            <div class="skill-category">Backend & Data Analysis</div>
+            <div class="small text-muted mt-2">FastAPI, Django, NumPy</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-java-plain"></i>
+            </div>
+            <div class="skill-name">Java</div>
+            <div class="skill-category">Enterprise Development</div>
+            <div class="small text-muted mt-2">Spring Boot, Hibernate, OOP</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 85%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-category">Frontend & Node.js</div>
+            <div class="small text-muted mt-2">Node.js, Express, ES6+</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 92%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-php-plain"></i>
+            </div>
+            <div class="skill-name">PHP</div>
+            <div class="skill-category">Web Backend</div>
+            <div class="small text-muted mt-2">Laravel, Native PHP, MVC</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 95%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-ruby-plain"></i>
+            </div>
+            <div class="skill-name">Ruby</div>
+            <div class="skill-category">Backend & Scripting</div>
+            <div class="small text-muted mt-2">Ruby on Rails, Active Record</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 80%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-rust-plain"></i>
+            </div>
+            <div class="skill-name">Rust</div>
+            <div class="skill-category">Systems Programming</div>
+            <div class="small text-muted mt-2">Cargo, Actix-web, Memory Safety</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 75%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-dart-plain"></i>
+            </div>
+            <div class="skill-name">Dart</div>
+            <div class="skill-category">Mobile & Client Apps</div>
+            <div class="small text-muted mt-2">Flutter SDK, Async, OOP</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-go-original-wordmark"></i>
+            </div>
+            <div class="skill-name">Golang</div>
+            <div class="skill-category">Microservices</div>
+            <div class="small text-muted mt-2">Gin, Fiber, Goroutines</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 82%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-typescript-plain"></i>
+            </div>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-category">Typed JavaScript</div>
+            <div class="small text-muted mt-2">Type Safety, Interfaces, Generics</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-nodejs-plain"></i>
+            </div>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-category">Runtime Backend JS</div>
+            <div class="small text-muted mt-2">Express, REST API, npm Ecosystem</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 85%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-vuejs-plain"></i>
+            </div>
+            <div class="skill-name">Vue.js</div>
+            <div class="skill-category">Progressive Frontend</div>
+            <div class="small text-muted mt-2">Composition API, Vuex, Vite</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 80%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-julia-plain"></i>
+            </div>
+            <div class="skill-name">Julia</div>
+            <div class="skill-category">Scientific Computing</div>
+            <div class="small text-muted mt-2">Data Science, High-performance Computing</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 70%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Frameworks -->
+
+        <div class="col-12 mt-5 mb-2">
+          <h4 class="text-gradient-purple border-bottom border-secondary border-opacity-10 pb-2"><i class="fa-solid fa-layer-group me-2"></i>Frameworks</h4>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-pandas-plain"></i>
+            </div>
+            <div class="skill-name">Pandas</div>
+            <div class="skill-category">Analisis Data (Python)</div>
+            <div class="small text-muted mt-2">Dataframes, Aggregations</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 85%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-laravel-plain"></i>
+            </div>
+            <div class="skill-name">Laravel</div>
+            <div class="skill-category">MVC Web App (PHP)</div>
+            <div class="small text-muted mt-2">Laravel 12 & 13, Eloquent, Blade</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 95%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-flutter-plain"></i>
+            </div>
+            <div class="skill-name">Flutter</div>
+            <div class="skill-category">Multi-platform Mobile App (Dart)</div>
+            <div class="small text-muted mt-2">Android/iOS Widgets, State Management</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-nextjs-plain"></i>
+            </div>
+            <div class="skill-name">Next.js</div>
+            <div class="skill-category">React SSR Framework</div>
+            <div class="small text-muted mt-2">SSR, SSG, App Router, API Routes</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 82%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Database & Systems -->
+        <div class="col-12 mt-5 mb-2">
+          <h4 class="text-gradient-purple border-bottom border-secondary border-opacity-10 pb-2"><i class="fa-solid fa-server me-2"></i>Databases & Integrasi</h4>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="devicon-mysql-plain"></i>
+            </div>
+            <div class="skill-name">MySQL</div>
+            <div class="skill-category">Database Relasional</div>
+            <div class="small text-muted mt-2">Query Tuning, Joins, Triggers, FIFO</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-circle-nodes"></i>
+            </div>
+            <div class="skill-name">RESTful & gRPC API</div>
+            <div class="skill-category">Integrasi Backend</div>
+            <div class="small text-muted mt-2">HTTP Routes, JSON payloads, Middleware</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 92%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="skill-name">JSON Data</div>
+            <div class="skill-category">Format Pertukaran Data</div>
+            <div class="small text-muted mt-2">AJAX Fetch, API Payloads, Configs</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 95%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Keahlian Profesional -->
+        <div class="col-12 mt-5 mb-2">
+          <h4 class="text-gradient-purple border-bottom border-secondary border-opacity-10 pb-2"><i class="fa-solid fa-briefcase me-2"></i>Keahlian Profesional & Solusi</h4>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="skill-name">Problem Solving</div>
+            <div class="skill-category">Pemecahan Masalah</div>
+            <div class="small text-muted mt-2">Analisis logika, algoritma, arsitektur sistem</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 95%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-bug-slash"></i>
+            </div>
+            <div class="skill-name">Debugging Error</div>
+            <div class="skill-category">Pemecahan Bug</div>
+            <div class="small text-muted mt-2">Troubleshooting code, log tracing, optimasi</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 92%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="skill-name">Desain Website</div>
+            <div class="skill-category">UI/UX & Frontend</div>
+            <div class="small text-muted mt-2">Bootstrap, Responsive Web, layout estetik</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div class="skill-name">Perancangan Database</div>
+            <div class="skill-category">Database Design</div>
+            <div class="small text-muted mt-2">Skema MySQL, FIFO Stock, relasi tabel</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="skill-name">Komunikasi Client</div>
+            <div class="skill-category">Hubungan Intensif</div>
+            <div class="small text-muted mt-2">Konsultasi kebutuhan, presentasi demo, update progres</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon-box">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <div class="skill-name">Training Users</div>
+            <div class="skill-category">Pelatihan Pengguna</div>
+            <div class="small text-muted mt-2">Penyusunan panduan, demo aplikasi, onboarding tim client</div>
+            <div class="progress mt-3" style="height: 4px; background: rgba(168, 85, 247, 0.1);">
+              <div class="progress-bar" role="progressbar" style="width: 88%; background: var(--accent-light); box-shadow: 0 0 10px var(--accent-color);" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper">
+          <span class="section-subtitle">Karya & Portfolio</span>
+          <h2 class="display-5 text-gradient">Project Yang Pernah Dibuat</h2>
+          <p class="text-secondary">Berikut adalah template showcase project yang telah diselesaikan. Anda dapat dengan mudah menyesuaikan detail project ini di masa mendatang.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Project 1: Honda DDMS -->
+        <div class="col-lg-6 col-md-12">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <div id="carouselHonda" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="assets/image/honda.png" class="d-block w-100" alt="Sistem Dealer & Bengkel Honda DDMS">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="assets/image/honda1.png" class="d-block w-100" alt="Sistem Dealer & Bengkel Honda DDMS Alternatif">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHonda" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHonda" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Laravel 12</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">FIFO Stock</span>
+                <span class="project-tag">DDMS Bengkel</span>
+                <span class="project-tag">Dashboard Owner</span>
+              </div>
+              <h4 class="project-title">Sistem Dealer & Bengkel Honda (DDMS)</h4>
+              <p class="project-desc">
+                Aplikasi manajemen bengkel komprehensif yang dirancang untuk mengelola siklus keluar-masuk barang, mulai dari Purchase Order (PO) hingga Receive Order (RO). Mengelola data master lengkap (Customer, Supplier, Karyawan, Mekanik), input penjualan, data motor customer, serta modul pengelolaan stok dengan algoritma FIFO. Memiliki antarmuka yang setara dengan web resmi DDMS Honda, dilengkapi dashboard visual untuk owner bengkel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: ERP Hayami -->
+        <div class="col-lg-6 col-md-12">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <div id="carouselHayami" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="assets/image/hayami.png" class="d-block w-100" alt="ERP PT Hayami Kreasi Indonesia">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img src="assets/image/hayami1.png" class="d-block w-100" alt="ERP PT Hayami Kreasi Indonesia Alternatif">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHayami" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHayami" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Laravel 13</span>
+                <span class="project-tag">ERP System</span>
+                <span class="project-tag">FIFO Inventory</span>
+                <span class="project-tag">Inbound & Outbound</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">Dashboard Owner</span>
+              </div>
+              <h4 class="project-title">ERP PT Hayami Kreasi Indonesia</h4>
+              <p class="project-desc">
+                Sistem ERP terpadu berbasis Laravel 13 dan MySQL untuk meningkatkan efisiensi rantai pasok perusahaan. Mengatur siklus inbound barang masuk (Purchase Order dan Receive Order), pemindahan lokasi barang setelah penerimaan (RO), serta pengelolaan outbound barang keluar untuk pesanan penjualan. Dilengkapi dengan kontrol stok berbasis metode FIFO yang presisi, pengelolaan master data (karyawan, customer, supplier, inventori barang), serta dashboard analitik interaktif khusus bagi owner untuk monitoring perkembangan bisnis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container py-lg-5">
+      <div class="row g-5">
+        
+        <!-- Contact Info -->
+        <div class="col-lg-5 text-start">
+          <span class="section-subtitle">HUBUNGI SAYA</span>
+          <h2 class="display-6 text-gradient mb-4">Mari Diskusikan Project Anda</h2>
+          <p class="text-secondary mb-5">
+            Apakah Anda memiliki ide project menarik atau membutuhkan talenta developer fullstack untuk bergabung dengan tim Anda? Silakan hubungi saya kapan saja. Saya akan membalas secepat mungkin.
+          </p>
+          
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="social-circle fs-5"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <small class="text-muted d-block uppercase fw-600" style="font-size: 0.75rem;">EMAIL SAYA</small>
+              <a href="mailto:rizkysaputro2512@gmail.com" class="text-white text-decoration-none">rizkysaputro2512@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="social-circle fs-5"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <small class="text-muted d-block uppercase fw-600" style="font-size: 0.75rem;">WHATSAPP SAYA</small>
+              <a href="https://wa.me/6287811561820" target="_blank" class="text-white text-decoration-none">087811561820</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="social-circle fs-5"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div>
+              <small class="text-muted d-block uppercase fw-600" style="font-size: 0.75rem;">LOKASI</small>
+              <span class="text-white">Kota Bekasi, Jawa Barat</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="social-circle fs-5"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <small class="text-muted d-block uppercase fw-600" style="font-size: 0.75rem;">TIPE PEKERJAAN</small>
+              <span class="text-white">Full-time / Remote / Freelance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="card-glass">
+            <h4 class="mb-4 text-gradient">Kirim Pesan</h4>
+            <div id="formResponse" class="mb-3"></div>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6 text-start">
+                  <label for="formName" class="form-label text-secondary fw-500">Nama Lengkap</label>
+                  <input type="text" class="form-control form-glass" id="formName" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="col-md-6 text-start">
+                  <label for="formEmail" class="form-label text-secondary fw-500">Alamat Email</label>
+                  <input type="email" class="form-control form-glass" id="formEmail" placeholder="nama@email.com" required>
+                </div>
+                <div class="col-12 text-start">
+                  <label for="formSubject" class="form-label text-secondary fw-500">Subjek</label>
+                  <input type="text" class="form-control form-glass" id="formSubject" placeholder="Subjek pesan" required>
+                </div>
+                <div class="col-12 text-start">
+                  <label for="formMessage" class="form-label text-secondary fw-500">Pesan Anda</label>
+                  <textarea class="form-control form-glass" id="formMessage" rows="5" placeholder="Tuliskan detail project atau pesan Anda di sini..." required></textarea>
+                </div>
+                <div class="col-12 text-start mt-4">
+                  <button type="submit" class="btn btn-purple w-100" id="btnSubmitForm">
+                    Kirim Pesan <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-wrap py-5">
+    <div class="container text-center">
+      <div class="row justify-content-between align-items-center g-4">
+        <div class="col-md-4 text-md-start">
+          <span class="fs-4 fw-800 text-gradient-purple"><i class="fa-solid fa-code me-1"></i>Rizky Saputro</span>
+          <p class="text-muted mt-2 mb-0" style="font-size: 0.9rem;">Membangun masa depan digital dengan kode yang solid dan efisien.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/kyybogor" target="_blank" class="social-circle" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rizky-saputro-a76413315" target="_blank" class="social-circle" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/lontongmesirrr" target="_blank" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="text-muted mb-0" style="font-size: 0.85rem;">&copy; 2026 Rizky Saputro. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
